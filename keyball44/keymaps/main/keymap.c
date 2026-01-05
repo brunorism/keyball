@@ -34,14 +34,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [_SYM] = LAYOUT(
-        _______  , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , _______  ,
-        _______  , JP_QUOT  , JP_MINS  , JP_LBRC  , JP_RBRC  , JP_AT    ,  KC_LEFT  , KC_DOWN  , KC_UP    , KC_RGHT  , _______  , _______  ,
-        _______  , JP_PIPE  , JP_TILD  , JP_EQL   , JP_DQUO  , JP_CIRC  ,  KC_HOME  , KC_PGDN  , KC_PGUP  , KC_END   , _______  , _______  ,
+        _______  , JP_EXLM  , JP_DQUO  , JP_HASH  , JP_DLR   , JP_PERC  ,  JP_AMPR  , JP_ASTR  , JP_LPRN  , JP_RPRN  , JP_EQL   , _______  ,
+        _______  , JP_TILD  , JP_MINS  , JP_LBRC  , JP_RBRC  , JP_AT    ,  KC_LEFT  , KC_DOWN  , KC_UP    , KC_RGHT  , _______  , _______  ,
+        _______  , JP_UNDS  , JP_PLUS  , JP_QUOT  , JP_CIRC  , JP_BSLS  ,  KC_HOME  , KC_PGDN  , KC_PGUP  , KC_END   , _______  , _______  ,
         _______  , _______  , _______  , _______  , _______  , JP_MHEN  ,  KC_SPC   , _______
     ),
 
-    // [_SYM] = LAYOUT(
-    //     _______  , JP_EXLM  , JP_AT    , JP_HASH  , JP_DLR   , JP_PERC  ,  JP_CIRC  , JP_AMPR  , JP_ASTR  , JP_MINS  , JP_EQL   , _______  ,
+    // [_sym] = LAYOUT(
+    //     _______  , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , _______  ,
     //     _______  , JP_CIRC  , JP_MINS  , JP_EQL   , JP_QUOT  , JP_AT    ,  KC_LEFT  , KC_DOWN  , KC_UP    , KC_RGHT  , _______  , _______  ,
     //     _______  , JP_PERC  , JP_DLR   , JP_BSLS  , JP_AMPR  , JP_EXLM  ,  KC_HOME  , KC_PGDN  , KC_PGUP  , KC_END   , _______  , _______  ,
     //     _______  , _______  , _______  , _______  , _______  , KC_SPC   ,  KC_SPC   , _______
