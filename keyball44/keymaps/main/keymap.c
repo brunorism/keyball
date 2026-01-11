@@ -30,37 +30,30 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_DEL   , KC_Q     , KC_W     , KC_E     , KC_R     , KC_T     ,  KC_Y     , KC_U     , KC_I     , KC_O     , KC_P     , KC_BSPC  ,
         OM_LALT  , KC_A     , KC_S     , KC_D     , KC_F     , KC_G     ,  KC_H     , KC_J     , KC_K     , KC_L     , JP_SCLN  , ENTER    ,
         KC_LSFT  , KC_Z     , KC_X     , KC_C     , KC_V     , KC_B     ,  KC_N     , KC_M     , KC_COMM  , KC_DOT   , KC_SLSH  , KC_RSFT  ,
-        _______  , _______  , OM_LGUI  , KC_SPC   , OM_LCTL  , L_FUN    ,  L_SYM    , KC_SPC
-    ),
+        KC_SYS   , KC_MAN   , OM_LGUI  , KC_SPC   , OM_LCTL  , L_FUN    ,  L_SYM    , KC_SPC
+        ),
 
     [_SYM] = LAYOUT(
-        _______  , JP_EXLM  , JP_DQUO  , JP_HASH  , JP_DLR   , JP_PERC  ,  JP_AMPR  , JP_ASTR  , JP_LPRN  , JP_RPRN  , JP_EQL   , _______  ,
+        _______  , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , _______  ,
         _______  , JP_TILD  , JP_MINS  , JP_LBRC  , JP_RBRC  , JP_AT    ,  KC_LEFT  , KC_DOWN  , KC_UP    , KC_RGHT  , _______  , _______  ,
-        _______  , JP_UNDS  , JP_PLUS  , JP_QUOT  , JP_CIRC  , JP_BSLS  ,  KC_HOME  , KC_PGDN  , KC_PGUP  , KC_END   , _______  , _______  ,
+        _______  , JP_ASTR  , JP_PLUS  , JP_PIPE  , JP_CIRC  , JP_BSLS  ,  KC_HOME  , KC_PGDN  , KC_PGUP  , KC_END   , _______  , _______  ,
         _______  , _______  , _______  , _______  , _______  , JP_MHEN  ,  KC_SPC   , _______
-    ),
-
-    // [_sym] = LAYOUT(
-    //     _______  , KC_1     , KC_2     , KC_3     , KC_4     , KC_5     ,  KC_6     , KC_7     , KC_8     , KC_9     , KC_0     , _______  ,
-    //     _______  , JP_CIRC  , JP_MINS  , JP_EQL   , JP_QUOT  , JP_AT    ,  KC_LEFT  , KC_DOWN  , KC_UP    , KC_RGHT  , _______  , _______  ,
-    //     _______  , JP_PERC  , JP_DLR   , JP_BSLS  , JP_AMPR  , JP_EXLM  ,  KC_HOME  , KC_PGDN  , KC_PGUP  , KC_END   , _______  , _______  ,
-    //     _______  , _______  , _______  , _______  , _______  , KC_SPC   ,  KC_SPC   , _______
-    // ),
+        ),
 
     [_FUN] = LAYOUT(
         _______  , _______  , _______  , _______  , _______  , _______  ,  _______  , _______  , _______  , _______  , _______  , _______  ,
         _______  , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,  KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , _______  ,
         _______  , KC_SCRL  , KC_BRIU  , KC_BRK   , KC_INS   , KC_VOLU  ,  KC_F12   , KC_F11   , _______  , _______  , KC_APP   , _______  ,
         _______  , _______  , _______  , _______  , _______  , JP_MHEN  ,  KC_SPC   , _______ 
-    ),
+        ),
 
-    [_MOV] = LAYOUT(
+    [_MOS] = LAYOUT(
         _______  , _______  , _______  , _______  , _______  , _______  ,  _______  , _______  , _______  , _______  , _______  , _______  ,
         _______  , _______  , _______  , _______  , _______  , _______  ,  _______  , _______  , KC_SCR   , _______  , _______  , _______  ,
         _______  , _______  , _______  , _______  , _______  , _______  ,  _______  , MS_BTN1  , MS_BTN2  , _______  , _______  , _______  ,
         _______  , _______  , _______  , _______  , _______  , JP_MHEN  ,  KC_SPC   , _______
-    ),}
-  ;
+        ),
+};
 
 // clang-format on
 layer_state_t layer_state_set_user(layer_state_t state) {
