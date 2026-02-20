@@ -21,21 +21,18 @@
 #define TAP_CODE_DELAY 5
 
 #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
-/* #define HOLD_ON_OTHER_KEY_PRESS */
-#define TAPPING_TERM 160
+#define TAPPING_TERM 150
 
-/* #define FLOW_TAP_TERM 150 */
+// #define FLOW_TAP_TERM 150
 #define QUICK_TAP_TERM 0
 
-#define ONESHOT_TIMEOUT 200
+#define ONESHOT_TIMEOUT 120
 
 #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
 #define AUTO_MOUSE_TIME 500
 
 #define DUMMY_MOD_NEUTRALIZER_KEYCODE KC_F13
-#define MODS_TO_NEUTRALIZE {    \
-            MOD_BIT(KC_LALT)  , \
-            MOD_BIT(KC_RALT)  , \
-            MOD_BIT(KC_LGUI)  , \
-            MOD_BIT(KC_RGUI)  , \
+#define MODS_TO_NEUTRALIZE {                             \
+            MOD_BIT(KC_LEFT_ALT), MOD_BIT(KC_RIGHT_ALT), \
+            MOD_BIT(KC_LEFT_GUI), MOD_BIT(KC_RIGHT_GUI), \
 }
